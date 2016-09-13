@@ -46,7 +46,7 @@ namespace uPark.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="EstacionamentoId,Nome,Endereço,NumeroVagas,CNPJ,Preço,HorarioFuncio,VagasDisponiveis")] Estacionamento estacionamento)
+        public ActionResult Create([Bind(Include="EstacionamentoId,Nome,Email,Senha,Endereco,NumeroVagas,CNPJ,Preco,HorarioFuncio,VagasDisponiveis")] Estacionamento estacionamento)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace uPark.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="EstacionamentoId,Nome,Endereço,NumeroVagas,CNPJ,Preço,HorarioFuncio,VagasDisponiveis")] Estacionamento estacionamento)
+        public ActionResult Edit([Bind(Include="EstacionamentoId,Nome,Email,Senha,Endereco,NumeroVagas,CNPJ,Preco,HorarioFuncio,VagasDisponiveis")] Estacionamento estacionamento)
         {
             if (ModelState.IsValid)
             {

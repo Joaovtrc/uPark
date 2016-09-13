@@ -7,81 +7,94 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm())
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
+    
+    
+    <div class="form-horizontal">
+        <h4>Estacionamento</h4>
+        <hr />
+        @Html.ValidationSummary(true)
 
-<form class="form-horizontal">
-    <br />
-    <fieldset>
-        <legend>Cadastre seu estacionamento.</legend>
-        <div class="form-horizontal">            
-            @Html.ValidationSummary(true)
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Nome, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Nome)
-                    @Html.ValidationMessageFor(model => model.Nome)
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Endereço, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Endereço)
-                    @Html.ValidationMessageFor(model => model.Endereço)
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.NumeroVagas, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.NumeroVagas)
-                    @Html.ValidationMessageFor(model => model.NumeroVagas)
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.CNPJ, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.CNPJ)
-                    @Html.ValidationMessageFor(model => model.CNPJ)
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Preço, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Preço)
-                    @Html.ValidationMessageFor(model => model.Preço)
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.HorarioFuncio, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.HorarioFuncio)
-                    @Html.ValidationMessageFor(model => model.HorarioFuncio)
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.VagasDisponiveis, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.VagasDisponiveis)
-                    @Html.ValidationMessageFor(model => model.VagasDisponiveis)
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Cadastrar" class="btn btn-default" />
-                </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nome, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome)
+                @Html.ValidationMessageFor(model => model.Nome)
             </div>
         </div>
-    </fieldset>
-</form>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Senha, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Senha)
+                @Html.ValidationMessageFor(model => model.Senha)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Endereco, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Endereco)
+                @Html.ValidationMessageFor(model => model.Endereco)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumeroVagas, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NumeroVagas)
+                @Html.ValidationMessageFor(model => model.NumeroVagas)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CNPJ, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CNPJ)
+                @Html.ValidationMessageFor(model => model.CNPJ)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Preco, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Preco)
+                @Html.ValidationMessageFor(model => model.Preco)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HorarioFuncio, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HorarioFuncio)
+                @Html.ValidationMessageFor(model => model.HorarioFuncio)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.VagasDisponiveis, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.VagasDisponiveis)
+                @Html.ValidationMessageFor(model => model.VagasDisponiveis)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
 }
 
 <div>

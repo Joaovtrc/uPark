@@ -1,69 +1,16 @@
-﻿@model IEnumerable<uPark.Models.Estacionamento>
-
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    ViewBag.Title = "Home";
 }
+<br /><br /><br />
+<h1>uPark</h1>
+<hr />
+<div class="row">
+  <div class="col-lg-6">
+      <h3>História</h3>
+      <p>O projeto uPark começou na faculdade Universidade Positivo, quando nós tivemos problemas em encontrar estacionamentos vagos perto do nosso local de estudo.</p>
+  </div>
+    <div class="col-lg-6">
+    </div>
+</div>
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Endereço)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NumeroVagas)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CNPJ)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Preço)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HorarioFuncio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VagasDisponiveis)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Endereço)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NumeroVagas)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CNPJ)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Preço)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HorarioFuncio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VagasDisponiveis)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EstacionamentoId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EstacionamentoId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EstacionamentoId })
-        </td>
-    </tr>
-}
-
-</table>

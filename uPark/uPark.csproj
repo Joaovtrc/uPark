@@ -144,6 +144,10 @@
     <Compile Include="Migrations\201609131748288_estacionamento.Designer.cs">
       <DependentUpon>201609131748288_estacionamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609131857174_DataAnnotationsetc.cs" />
+    <Compile Include="Migrations\201609131857174_DataAnnotationsetc.Designer.cs">
+      <DependentUpon>201609131857174_DataAnnotationsetc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Carro.cs" />
     <Compile Include="Models\Context.cs" />
@@ -187,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609131748288_estacionamento.resx">
       <DependentUpon>201609131748288_estacionamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609131857174_DataAnnotationsetc.resx">
+      <DependentUpon>201609131857174_DataAnnotationsetc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
