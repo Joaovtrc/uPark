@@ -7,6 +7,7 @@ namespace uPark.Models
 {
     public class Estacionamento
     {
+        public int EstacionamentoId { get; set; }
         public string Nome { get; set; }
         public string Endereço { get; set; }
         public int NumeroVagas { get; set; }

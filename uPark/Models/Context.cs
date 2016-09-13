@@ -6,7 +6,7 @@ using System.Web;
 
 namespace uPark.Models
 {
-    public class Context
+    public class Context : DbContext
     {
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Carro> Carros { get; set; }
