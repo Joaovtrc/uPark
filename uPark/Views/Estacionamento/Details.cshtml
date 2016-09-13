@@ -1,0 +1,74 @@
+﻿@model uPark.Models.Estacionamento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Estacionamento</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereço)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereço)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroVagas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroVagas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNPJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNPJ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preço)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preço)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorarioFuncio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorarioFuncio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VagasDisponiveis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VagasDisponiveis)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EstacionamentoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
