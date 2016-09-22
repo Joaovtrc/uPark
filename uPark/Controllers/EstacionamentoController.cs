@@ -20,6 +20,11 @@ namespace uPark.Controllers
             return View(db.Estacionamentos.ToList());
         }
 
+        public ActionResult List()
+        {
+            return View(db.Estacionamentos.ToList());
+        }
+
         // GET: /Estacionamento/Details/5
         public ActionResult Details(int? id)
         {
@@ -46,7 +51,7 @@ namespace uPark.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="EstacionamentoId,Nome,Email,Senha,Endereco,NumeroVagas,CNPJ,Preco,HorarioFuncio,VagasDisponiveis")] Estacionamento estacionamento)
+        public ActionResult Create([Bind(Include = "EstacionamentoId,Nome,Email,Senha,ConfirmacaoSenha,Endereco,NumeroVagas,CNPJ,Preco,HorarioFuncio")] Estacionamento estacionamento)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +83,7 @@ namespace uPark.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="EstacionamentoId,Nome,Email,Senha,Endereco,NumeroVagas,CNPJ,Preco,HorarioFuncio,VagasDisponiveis")] Estacionamento estacionamento)
+        public ActionResult Edit([Bind(Include="EstacionamentoId,Nome,Email,Senha,Endereco,NumeroVagas,CNPJ,Preco,HorarioFuncio")] Estacionamento estacionamento)
         {
             if (ModelState.IsValid)
             {

@@ -20,6 +20,11 @@ namespace uPark.Controllers
             return View(db.Usuarios.ToList());
         }
 
+        public ActionResult List()
+        {
+            return View(db.Usuarios.ToList());
+        }
+
         // GET: /Usuario/Details/5
         public ActionResult Details(int? id)
         {
@@ -46,7 +51,7 @@ namespace uPark.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="UsuarioId,Nome,DataNasc,CPF,CEP,Cidade,Estado,Email,Senha")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "UsuarioId,Nome,DataNasc,CPF,Email,Senha,ConfirmacaoSenha")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +83,7 @@ namespace uPark.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="UsuarioId,Nome,DataNasc,CPF,CEP,Cidade,Estado,Email,Senha")] Usuario usuario)
+        public ActionResult Edit([Bind(Include="UsuarioId,Nome,DataNasc,CPF,Email,Senha")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {

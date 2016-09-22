@@ -9,7 +9,6 @@ namespace uPark.Models
     public class Context : DbContext
     {
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Carro> Carros { get; set; }
         public DbSet<Estacionamento> Estacionamentos { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
 

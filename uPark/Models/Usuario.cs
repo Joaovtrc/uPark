@@ -18,19 +18,12 @@ namespace uPark.Models
 
         [Required(ErrorMessage = "Campo obrigatório")]
         [Display(Name = "Data de nascimento")]
-        public DateTime DataNasc { get; set; }
+        public string DataNasc { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
         [Display(Name = "CPF")]
         public int CPF { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório")]
-        [Display(Name = "Cidade")]
-        public string Cidade { get; set; }
-
-        [Required(ErrorMessage = "Campo obrigatório")]
-        [Display(Name = "Estado")]
-        public string Estado { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório!")]
         [Display(Name = "E-mail")]
@@ -38,7 +31,6 @@ namespace uPark.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
-        [Display(Name = "Senha")]
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório!")]
@@ -47,13 +39,6 @@ namespace uPark.Models
         [NotMapped]
         [ScaffoldColumn(true)]
         public string ConfirmacaoSenha { get; set; }
-
-        [Required(ErrorMessage = "Campo obrigatório")]
-        [Display(Name = "Nome")]
-        public Carro Carro { get; set; }
-
-        [ScaffoldColumn(true)]
-        public Reserva ReservaUsuario { get; set; }
 
     }
 }

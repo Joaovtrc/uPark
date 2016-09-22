@@ -148,8 +148,39 @@
     <Compile Include="Migrations\201609131857174_DataAnnotationsetc.Designer.cs">
       <DependentUpon>201609131857174_DataAnnotationsetc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609221821049_ChangesUsuEst.cs" />
+    <Compile Include="Migrations\201609221821049_ChangesUsuEst.Designer.cs">
+      <DependentUpon>201609221821049_ChangesUsuEst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221822564_DACarro.cs" />
+    <Compile Include="Migrations\201609221822564_DACarro.Designer.cs">
+      <DependentUpon>201609221822564_DACarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221828062_DASenhaUsu.cs" />
+    <Compile Include="Migrations\201609221828062_DASenhaUsu.Designer.cs">
+      <DependentUpon>201609221828062_DASenhaUsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221834273_DASenhaUsu2.cs" />
+    <Compile Include="Migrations\201609221834273_DASenhaUsu2.Designer.cs">
+      <DependentUpon>201609221834273_DASenhaUsu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221837144_DASenhaEst2.cs" />
+    <Compile Include="Migrations\201609221837144_DASenhaEst2.Designer.cs">
+      <DependentUpon>201609221837144_DASenhaEst2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221858173_CarroUsuario.cs" />
+    <Compile Include="Migrations\201609221858173_CarroUsuario.Designer.cs">
+      <DependentUpon>201609221858173_CarroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221901146_CarroUsuario2.cs" />
+    <Compile Include="Migrations\201609221901146_CarroUsuario2.Designer.cs">
+      <DependentUpon>201609221901146_CarroUsuario2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609221917156_1234.cs" />
+    <Compile Include="Migrations\201609221917156_1234.Designer.cs">
+      <DependentUpon>201609221917156_1234.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Carro.cs" />
     <Compile Include="Models\Context.cs" />
     <Compile Include="Models\Estacionamento.cs" />
     <Compile Include="Models\Reserva.cs" />
@@ -162,16 +193,18 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Usuario\Create.cshtml" />
-    <Content Include="Views\Usuario\Delete.cshtml" />
-    <Content Include="Views\Usuario\Details.cshtml" />
-    <Content Include="Views\Usuario\Edit.cshtml" />
-    <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Estacionamento\Create.cshtml" />
     <Content Include="Views\Estacionamento\Delete.cshtml" />
     <Content Include="Views\Estacionamento\Details.cshtml" />
     <Content Include="Views\Estacionamento\Edit.cshtml" />
     <Content Include="Views\Estacionamento\Index.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Estacionamento\List.cshtml" />
+    <Content Include="Views\Usuario\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -194,6 +227,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609131857174_DataAnnotationsetc.resx">
       <DependentUpon>201609131857174_DataAnnotationsetc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221821049_ChangesUsuEst.resx">
+      <DependentUpon>201609221821049_ChangesUsuEst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221822564_DACarro.resx">
+      <DependentUpon>201609221822564_DACarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221828062_DASenhaUsu.resx">
+      <DependentUpon>201609221828062_DASenhaUsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221834273_DASenhaUsu2.resx">
+      <DependentUpon>201609221834273_DASenhaUsu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221837144_DASenhaEst2.resx">
+      <DependentUpon>201609221837144_DASenhaEst2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221858173_CarroUsuario.resx">
+      <DependentUpon>201609221858173_CarroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221901146_CarroUsuario2.resx">
+      <DependentUpon>201609221901146_CarroUsuario2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609221917156_1234.resx">
+      <DependentUpon>201609221917156_1234.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
