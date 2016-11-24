@@ -20,6 +20,7 @@ namespace uPark.Controllers
             return View(db.Estacionamentos.ToList());
         }
 
+        // /Estacionamento/List
         public ActionResult List()
         {
             return View(db.Estacionamentos.ToList());
@@ -117,7 +118,7 @@ namespace uPark.Controllers
             Estacionamento estacionamento = db.Estacionamentos.Find(id);
             db.Estacionamentos.Remove(estacionamento);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("List");
         }
 
         protected override void Dispose(bool disposing)
